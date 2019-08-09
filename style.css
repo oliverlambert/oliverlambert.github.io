@@ -21,11 +21,11 @@ body {
 }
 
 /* Color schemes */
-.demo-1 {
+.oliverlambert {
 	--color-text: #ededed;
-	--color-bg: #000;
+	--color-bg: #010138;
 	--color-link: #fff;
-	--color-link-hover: #5d5050;
+	--color-link-hover: #fff;
 	--color-info: #5d5050;
 	--color-menu: #fff;
 	--color-menu-hover: #fff;
@@ -89,6 +89,7 @@ a:hover,
 a:focus {
 	color: var(--color-link-hover);
 	outline: none;
+	text-decoration: underline;
 }
 
 .hidden {
@@ -394,13 +395,6 @@ main {
 	justify-self: end;
 }
 
-.github {
-	display: block;
-	align-self: end;
-	grid-area: github;
-	justify-self: start;
-}
-
 /* Top Navigation Style */
 .codrops-links {
 	position: relative;
@@ -445,9 +439,6 @@ main {
 	.info {
 		margin: 0;
 		text-align: center;
-	}
-	.github {
-		display: none;
 	}
 	.codrops-links {
 		margin: 0;
