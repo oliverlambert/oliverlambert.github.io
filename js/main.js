@@ -139,6 +139,7 @@
     });
     DOM.ctrlBack = DOM.content.querySelector('.content__close');
     DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item'));
+    DOM.external_links = Array.from(document.querySelectorAll('.content__inner > a'));
 
     DOM.links.forEach((link, pos) => {
         link.style.pointerEvents = 'none';
@@ -186,8 +187,9 @@
 
             const contentInner = DOM.contentInner[pos];
             contentInner.style.opacity = 1;
+            contentInner.style.display = 'grid';
             anime({
-                targets: [contentInner.querySelectorAll('.content__title > span'), contentInner.querySelectorAll('.content__subtitle > span'), DOM.ctrlBack],
+                targets: [contentInner.querySelectorAll('.content__title > span'), contentInner.querySelectorAll('.content__subtitle > span'), contentInner.querySelectorAll('.content__subtitle > a > span'), DOM.ctrlBack],
                 duration: 200,
                 delay: (t,i) => anime.random(0,600),
                 easing: 'easeInOutQuad',
@@ -212,6 +214,7 @@
             complete: () => {
                 contentInner.style.opacity = 0;
                 DOM.content.style.pointerEvents = 'none';
+                contentInner.style.display = 'none';
             }
         });
 
