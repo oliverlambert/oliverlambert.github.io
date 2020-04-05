@@ -333,23 +333,23 @@ main {
 	transform: scale3d(0,1,1);
 }
 
-.menu__item:nth-child(2)::before {
+.menu__item:nth-child(3)::before {
 	background: linear-gradient(45deg, #0947db, #07d89d);
 }
 
-.menu__item:nth-child(3)::before {
+.menu__item:nth-child(4)::before {
 	background: linear-gradient(45deg, #ee2d29, #f8ae2c);
 }
 
-.menu__item:nth-child(4)::before {
+.menu__item:nth-child(5)::before {
 	background: linear-gradient(45deg, #444, #999);
 }
 
-.menu__item:nth-child(5)::before {
+.menu__item:nth-child(6)::before {
 	background: linear-gradient(45deg, #3671DB, #1DA1F2);
 }
 
-.menu__item:nth-child(6)::before {
+.menu__item:nth-child(2)::before {
 	background: linear-gradient(45deg, #00ac53, #23c3e0);
 }
 
